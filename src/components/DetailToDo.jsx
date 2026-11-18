@@ -31,7 +31,7 @@ export default function DetailTodo({ todos, onUpdate }) {
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="w-full md:w-1/2 bg-[#F9F6F0] rounded shadow p-6 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6">
-        {/* Kiri: judul & deskripsi */}
+      
         <div>
           <h2 className="text-lg font-bold">Judul</h2>
           <p className="text-sm mb-4">{todo.judul}</p>
@@ -42,7 +42,7 @@ export default function DetailTodo({ todos, onUpdate }) {
           </p>
         </div>
 
-        {/* Kanan: status, prioritas, deadline, tombol */}
+
         <div className="flex flex-col gap-3">
           <div>
             <h2 className="text-lg font-bold">Status</h2>
@@ -74,7 +74,7 @@ export default function DetailTodo({ todos, onUpdate }) {
         </div>
       </div>
 
-      {/* Modal update */}
+  
       {showForm && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50">
           <TodoForm
